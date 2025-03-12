@@ -1,0 +1,10 @@
+{
+  "type": "prismarine_plus:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/elder_guardian"
+    }
+  ],
+  "item": "prismarine_plus:white_prismarine_cluster"
+}

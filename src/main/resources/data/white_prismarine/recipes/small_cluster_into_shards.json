@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "white_prismarine:white_prismarine_cluster_small"
+        }
+    ],
+    "result": {
+        "id": "white_prismarine:white_prismarine_shard",
+        "count": 64
+    },
+    "group": "stuff"
+}
+
+
+
+

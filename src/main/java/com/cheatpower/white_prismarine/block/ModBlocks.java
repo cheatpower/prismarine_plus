@@ -1,10 +1,9 @@
-package com.cheatpower.prismarine_plus.block;
+package com.cheatpower.white_prismarine.block;
 
-import com.cheatpower.prismarine_plus.PrismarinePlus;
-import com.cheatpower.prismarine_plus.item.ModItems;
+import com.cheatpower.white_prismarine.WhitePrismarine;
+import com.cheatpower.white_prismarine.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -16,11 +15,15 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
-            DeferredRegister.createBlocks(PrismarinePlus.MOD_ID);
+            DeferredRegister.createBlocks(WhitePrismarine.MOD_ID);
 
 
     public static final DeferredBlock<Block> WHITE_PRISMARINE_BRICKS = registerBlock("white_prismarine_bricks",
     () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PRISMARINE_BRICKS)));
+
+
+    public static final DeferredBlock<Block> WHITE_PRISMARINE = registerBlock("white_prismarine",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PRISMARINE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
